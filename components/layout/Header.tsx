@@ -11,12 +11,12 @@ export default function Header() {
                 {/* Logo */}
                 <Link href="/" className="flex items-center">
                     <Image
-                        src="/logo.png"
+                        src="/logo-dawam.png"
                         alt="DAWAM"
-                        width={137}
+                        width={70}
                         height={70}
                         priority
-                        className="h-auto w-[120px]"
+                        className="h-[70px] w-[70px]"
                     />
                 </Link>
 

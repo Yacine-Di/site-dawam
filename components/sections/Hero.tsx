@@ -1,9 +1,9 @@
-import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import CtaLink from "../ui/CtaLink";
 
 export default function Hero() {
     return (
-        <section className="relative flex min-h-[calc(100vh-80px)] w-full items-center overflow-hidden">
+        <section className="relative flex min-h-screen w-full items-center overflow-hidden">
             <div className="mx-auto flex w-full max-w-7xl flex-col items-center gap-12 px-6 py-20 lg:flex-row lg:gap-16 lg:px-8">
                 {/* Content */}
                 <div className="flex w-full max-w-2xl flex-col items-center text-center lg:items-start lg:text-left">
@@ -30,13 +30,7 @@ export default function Hero() {
 
                     {/* CTAs */}
                     <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                        <Button
-                            size="lg"
-                            className="bg-[#00846A] text-white hover:bg-[#008C58]"
-                        >
-                            Échanger sur votre besoin
-                            <ArrowRight />
-                        </Button>
+                        <CtaLink />
 
                         <Button
                             size="lg"

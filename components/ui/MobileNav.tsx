@@ -17,10 +17,13 @@ import CtaLink from "./CtaLink";
 import { useState } from "react";
 
 const links = [
-    { href: "/", label: "Accueil" },
-    { href: "/services", label: "Services" },
-    { href: "/a-propos", label: "À propos" },
-    { href: "/contact", label: "Contact" },
+    { href: "#", label: "Accueil" },
+    { href: "#methode", label: "Méthode" },
+    { href: "#solutions", label: "Solutions" },
+    { href: "#case", label: "Cas d'application" },
+    { href: "#howItWorks", label: "Comment ça marche" },
+    { href: "#faq", label: "FAQ" },
+    { href: "#contact", label: "Contact" },
 ];
 
 export default function MobileNav() {
