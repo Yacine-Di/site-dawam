@@ -16,7 +16,7 @@ export default function CtaLink() {
             >
                 <Link
                     href="/contact"
-                    className="block rounded-lg px-6 py-3 text-sm font-semibold text-white"
+                    className="block rounded-lg px-6 py-3 text-lg font-semibold text-white"
                 >
                     Échanger sur votre besoin
                 </Link>

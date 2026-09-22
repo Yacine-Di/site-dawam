@@ -1,5 +1,6 @@
-import { ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+"use client";
+
+import { motion } from "motion/react";
 import CtaLink from "../ui/CtaLink";
 
 const steps = [
@@ -25,25 +26,44 @@ const steps = [
 
 export default function Method() {
   return (
-    <section className="w-full bg-[#03031F] py-24 lg:py-32">
+    <section className="w-full bg-[#03031F] py-12 lg:py-16" id="method">
       <div className="mx-auto flex w-full max-w-7xl flex-col px-6 lg:px-8">
         {/* Header */}
         <div className="mx-auto max-w-3xl text-center">
-          <span className="text-sm font-semibold tracking-[0.2em] text-[#1FE48D]">
+          <motion.span
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6 }}
+            className="text-sm font-semibold tracking-[0.2em] text-[#1FE48D]"
+          >
             LA MÉTHODE DAWAM
-          </span>
+          </motion.span>
 
-          <h2 className="mt-5 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+            className="mt-5 text-3xl md:text-4xl font-bold tracking-tight text-white"
+          >
             Centralisez. Pilotez.{" "}
             <span className="text-[#1FE48D]">Automatisez.</span>
-          </h2>
+          </motion.h2>
         </div>
 
         {/* Steps */}
         <div className="mt-16 grid gap-6 md:grid-cols-3">
-          {steps.map((step) => (
-            <div
+          {steps.map((step, index) => (
+            <motion.div
               key={step.number}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{
+                duration: 0.6,
+                delay: index * 0.15,
+              }}
               className="group rounded-2xl border border-[#08485C]/60 bg-[#021F29]/50 p-8 transition-all duration-300 hover:-translate-y-1 hover:border-[#008C58]"
             >
               <span className="text-4xl font-bold text-[#00846A]/40 transition-colors group-hover:text-[#1FE48D]">
@@ -57,14 +77,20 @@ export default function Method() {
               <p className="mt-4 text-sm leading-7 text-white/60">
                 {step.description}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
 
         {/* CTA */}
-        <div className="mt-12 flex justify-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          className="mt-12 flex justify-center"
+        >
           <CtaLink />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

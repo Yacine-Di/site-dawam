@@ -1,6 +1,8 @@
 import Hero from "@/components/sections/Hero";
 import Problem from "@/components/sections/Problem";
 import Method from "../components/sections/Method";
+import Dashboard from "../components/sections/Dashboard";
+import Management from "../components/sections/Management";
 
 export default function Home() {
   return (
@@ -8,6 +10,8 @@ export default function Home() {
       <Hero />
       <Problem />
       <Method />
+      <Dashboard />
+      <Management />
     </main>
   );
 }
