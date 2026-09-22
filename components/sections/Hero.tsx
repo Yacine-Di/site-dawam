@@ -1,34 +1,28 @@
 import { Button } from "@/components/ui/button";
 import CtaLink from "../ui/CtaLink";
+import Image from "next/image";
 
 export default function Hero() {
     return (
-        <section className="relative flex min-h-screen w-full items-center overflow-hidden">
-            <div className="mx-auto flex w-full max-w-7xl flex-col items-center gap-12 px-6 py-20 lg:flex-row lg:gap-16 lg:px-8">
+        <section className="relative flex md:h-[100vh] w-full pt-32 pb-16 md:py-45 items-center overflow-hidden">
+            <div className="mx-auto flex w-full max-w-7xl flex-col items-center gap-6 px-16 py-20 lg:flex-row lg:gap-6 lg:px-8">
                 {/* Content */}
                 <div className="flex w-full max-w-2xl flex-col items-center text-center lg:items-start lg:text-left">
                     <span className="mb-6 text-sm font-semibold tracking-[0.2em] text-[#1FE48D]">
                         PILOTAGE • IA • AUTOMATISATION
                     </span>
 
-                    <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                        CENTRALISEZ. PILOTEZ.{" "}
-                        <span className="text-[#1FE48D]">AUTOMATISEZ.</span>
+                    <h1 className="text-2xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
+                        TOUTE VOTRE ACTIVITÉ {" "}
+                        <span className="text-[#1FE48D]">AUTOMATISÉE</span>
                     </h1>
 
                     <p className="mt-6 max-w-xl text-base leading-7 text-white/70 sm:text-lg">
-                        DAWAM conçoit des systèmes sur mesure pour structurer votre
-                        activité, centraliser vos informations et donner à vos équipes une
-                        vision claire de ce qui doit être fait.
+                        Enfin au même endroit.
+                        Clients, missions, équipe, échéances, données : DAWAM transforme votre fonctionnement en un système clair, connecté et automatisé.
                     </p>
 
-                    <p className="mt-4 max-w-xl text-base leading-7 text-white/70 sm:text-lg">
-                        Nous partons de vos outils, de vos processus et de votre
-                        organisation pour construire un cockpit adapté à votre façon de
-                        travailler, puis automatiser ce qui peut l’être.
-                    </p>
-
-                    {/* CTAs */}
+                    {/* CTA */}
                     <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                         <CtaLink />
 
@@ -37,7 +31,7 @@ export default function Hero() {
                             variant="outline"
                             className="border-[#08485C] bg-transparent text-white hover:bg-[#021F29]"
                         >
-                            Découvrir la méthode DAWAM
+                            Découvrir DAWAM
                         </Button>
                     </div>
 
@@ -50,10 +44,8 @@ export default function Hero() {
                 </div>
 
                 {/* Illustration */}
-                <div className="flex min-h-[400px] w-full flex-1 items-center justify-center lg:min-h-[550px]">
-                    <div className="flex aspect-square w-full max-w-[550px] items-center justify-center rounded-3xl border border-[#08485C]/50 bg-[#021F29]/50">
-                        {/* Illustration DAWAM ici */}
-                    </div>
+                <div className="flex w-full max-w-[600px] w-[600px] h-[380px] items-center justify-center rounded-3xl border border-[#08485C]/50 bg-[#021F29]/50">
+                    <Image src="/dawam-hero.png" alt="Illustration DAWAM" className="rounded-3xl object-fill w-[600px] h-[380px]" width={600} height={380} />
                 </div>
             </div>
         </section>
