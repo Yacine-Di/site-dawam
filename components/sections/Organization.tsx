@@ -11,7 +11,7 @@ const results = [
 export default function Organization() {
     return (
         <section
-            className="w-full bg-[#021F29] py-12 lg:py-16"
+            className="w-full bg-[#021F29] py-12 lg:py-16 overflow-x-hidden"
             id="organization"
         >
             <div className="mx-auto flex w-full max-w-7xl flex-col px-6 lg:px-8">
