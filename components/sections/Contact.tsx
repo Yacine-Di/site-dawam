@@ -5,7 +5,9 @@ import { motion } from "motion/react";
 
 export default function Contact() {
     return (
-        <section className="w-full bg-[#021F29] py-20 lg:py-28" id="contact">
+        <section
+            className="w-full bg-[#021F29] py-20 lg:py-28"
+            id="contact">
             <div className="mx-auto w-full max-w-5xl px-6 lg:px-8">
                 <div className="text-center">
                     <motion.span

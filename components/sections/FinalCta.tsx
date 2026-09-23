@@ -5,10 +5,7 @@ import { motion } from "motion/react";
 
 export default function FinalCta() {
     return (
-        <section
-            className="relative w-full overflow-hidden bg-[#03031F] py-20 lg:py-28"
-            id="contact"
-        >
+        <section className="relative w-full overflow-hidden bg-[#03031F] py-20 lg:py-28">
             {/* Background glow */}
             <motion.div
                 animate={{

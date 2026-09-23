@@ -15,7 +15,7 @@ export default function DiscoverLink() {
         className="rounded-lg border border-[#08485C] bg-transparent"
       >
         <Link
-          href="/"
+          href="#system"
           className="block rounded-lg px-6 py-3 text-lg font-semibold text-white"
         >
           Découvrir DAWAM

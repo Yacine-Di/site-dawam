@@ -9,9 +9,10 @@ import {
 import { cn } from "@/lib/utils";
 
 const links = [
-    { href: "#", label: "Accueil" },
-    { href: "#solutions", label: "Solutions" },
-    { href: "#howItWorks", label: "Comment ça marche" },
+    { href: "#hero", label: "Accueil" },
+    { href: "#system", label: "Solution" },
+    { href: "#method", label: "Méthode" },
+    { href: "#accounting", label: "Cas d’usage" },
     { href: "#faq", label: "FAQ" },
     { href: "#contact", label: "Contact" },
 ];
@@ -24,10 +25,7 @@ export default function DesktopNav() {
                     <NavigationMenuItem key={link.href}>
                         <Link
                             href={link.href}
-                            className={cn(
-                                navigationMenuTriggerStyle(),
-                                "bg-transparent text-md text-white/70 transition-colors hover:bg-[#021F29] hover:text-[#1FE48D]"
-                            )}
+                            className="rounded-md px-4 py-2 text-md text-white/70 transition-colors hover:bg-[#021F29] hover:text-[#1FE48D]"
                         >
                             {link.label}
                         </Link>

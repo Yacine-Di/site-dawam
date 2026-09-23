@@ -18,7 +18,7 @@ const features = [
 export default function Accounting() {
     return (
         <section
-            className="w-full bg-[#03031F] py-12 lg:py-16"
+            className="w-full overflow-x-hidden bg-[#03031F] py-12 lg:py-16"
             id="accounting"
         >
             <div className="mx-auto flex w-full max-w-7xl flex-col px-6 lg:px-8">
