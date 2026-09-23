@@ -42,11 +42,12 @@ export default function Hero() {
                 {/* Illustration */}
                 <div className="w-full max-w-[600px] overflow-hidden rounded-3xl border border-[#08485C]/50 bg-[#021F29]/50">
                     <Image
-                        src="/dawam-hero.png"
+                        src="/hero.png"
                         alt="Illustration DAWAM"
                         width={600}
                         height={380}
                         className="h-auto w-full rounded-3xl object-cover"
+                        loading="eager"
                     />
                 </div>
             </div>

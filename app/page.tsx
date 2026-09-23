@@ -1,17 +1,26 @@
-import Hero from "@/components/sections/Hero";
-import Problem from "@/components/sections/Problem";
-import Method from "../components/sections/Method";
-import Dashboard from "../components/sections/Dashboard";
-import Management from "../components/sections/Management";
+import Hero from "@/components/sections/Hero"
+import Organization from "../components/sections/Organization"
+import Dashboard from "../components/sections/Dashboard"
+import System from "../components/sections/System"
+import Accounting from "../components/sections/Accounting"
+import Method2 from "../components/sections/Method2"
+import BeforeAfter from "../components/sections/BeforeAfter"
+import Timing from "../components/sections/Timing"
+import FinalCta from "../components/sections/FinalCta"
+
 
 export default function Home() {
   return (
     <main className="flex min-h-screen w-full flex-col bg-[#03031F] text-white">
       <Hero />
-      <Problem />
-      <Method />
+      <Organization />
       <Dashboard />
-      <Management />
+      <System />
+      <Accounting />
+      <Method2 />
+      <BeforeAfter />
+      <Timing />
+      <FinalCta />
     </main>
   );
 }
