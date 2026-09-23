@@ -3,11 +3,12 @@ import Organization from "../components/sections/Organization"
 import Dashboard from "../components/sections/Dashboard"
 import System from "../components/sections/System"
 import Accounting from "../components/sections/Accounting"
-import Method2 from "../components/sections/Method2"
+import Method from "../components/sections/Method"
 import BeforeAfter from "../components/sections/BeforeAfter"
 import Timing from "../components/sections/Timing"
 import FinalCta from "../components/sections/FinalCta"
-
+import FAQ from "../components/sections/FAQ"
+import Contact from "../components/sections/Contact"
 
 export default function Home() {
   return (
@@ -17,10 +18,12 @@ export default function Home() {
       <Dashboard />
       <System />
       <Accounting />
-      <Method2 />
+      <Method />
       <BeforeAfter />
       <Timing />
       <FinalCta />
+      <FAQ />
+      <Contact />
     </main>
   );
 }

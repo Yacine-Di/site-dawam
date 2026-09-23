@@ -41,7 +41,7 @@ const steps = [
     },
 ];
 
-export default function Method2() {
+export default function Method() {
     return (
         <section
             className="w-full bg-[#021F29] py-12 lg:py-16"
