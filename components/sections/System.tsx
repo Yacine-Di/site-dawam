@@ -34,7 +34,7 @@ const professions = [
 export default function System() {
     return (
         <section
-            className="w-full bg-[#021F29] py-12 lg:py-16"
+            className="w-full bg-[#021F29] py-12 lg:py-16 scroll-mt-20"
             id="system"
         >
             <div className="mx-auto flex w-full max-w-7xl flex-col px-6 lg:px-8">
@@ -132,8 +132,8 @@ export default function System() {
                                     }}
                                     whileHover={{ y: -4 }}
                                     className={`group rounded-2xl border border-[#08485C]/60 bg-[#03031F]/60 p-5 transition-colors duration-300 hover:border-[#008C58] ${index === 4
-                                            ? "sm:col-span-2 sm:mx-auto sm:w-[calc(50%-0.375rem)]"
-                                            : ""
+                                        ? "sm:col-span-2 sm:mx-auto sm:w-[calc(50%-0.375rem)]"
+                                        : ""
                                         }`}
                                 >
                                     <div className="mb-4 flex items-center gap-3">

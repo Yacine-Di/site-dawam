@@ -44,7 +44,7 @@ const steps = [
 export default function Method() {
     return (
         <section
-            className="w-full bg-[#021F29] py-12 lg:py-16"
+            className="w-full bg-[#03031F] py-12 lg:py-16 scroll-mt-20"
             id="method"
         >
             <div className="mx-auto flex w-full max-w-7xl flex-col px-6 lg:px-8">

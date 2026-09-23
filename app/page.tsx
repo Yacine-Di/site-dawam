@@ -17,8 +17,8 @@ export default function Home() {
       <Organization />
       <Dashboard />
       <System />
-      <Accounting />
       <Method />
+      <Accounting />
       <BeforeAfter />
       <Timing />
       <FinalCta />

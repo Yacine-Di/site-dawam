@@ -18,7 +18,7 @@ const features = [
 export default function Accounting() {
     return (
         <section
-            className="w-full overflow-x-hidden bg-[#03031F] py-12 lg:py-16"
+            className="w-full overflow-x-hidden bg-[#021F29] py-12 scroll-mt-20 lg:py-16"
             id="accounting"
         >
             <div className="mx-auto flex w-full max-w-7xl flex-col px-6 lg:px-8">
@@ -81,9 +81,11 @@ export default function Accounting() {
                                         duration: 0.45,
                                         delay: 0.55 + index * 0.07,
                                     }}
-                                    className="flex items-center gap-2 rounded-lg border border-[#08485C]/50 bg-[#021F29]/50 px-3 py-2.5 text-left text-sm text-white/75"
+                                    className="flex items-center gap-2 rounded-lg border border-[#08485C]/60 bg-[#03031F] px-3 py-2.5 text-left text-sm text-white/80"
                                 >
-                                    <span className="text-[#1FE48D]">✓</span>
+                                    <span className="font-semibold text-[#1FE48D]">
+                                        ✓
+                                    </span>
                                     {feature}
                                 </motion.div>
                             ))}
@@ -96,7 +98,7 @@ export default function Accounting() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true, amount: 0.2 }}
                         transition={{ duration: 0.7, delay: 0.2 }}
-                        className="w-full overflow-hidden rounded-3xl border border-[#08485C]/60 bg-[#021F29]/50"
+                        className="w-full overflow-hidden rounded-3xl border border-[#08485C]/70 bg-[#03031F]"
                     >
                         <Image
                             src="/dawam-accounting.png"

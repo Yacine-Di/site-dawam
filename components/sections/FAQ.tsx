@@ -44,7 +44,7 @@ const faqs = [
 export default function FAQ() {
     return (
         <section
-            className="w-full bg-[#021F29] py-12 lg:py-16"
+            className="w-full bg-[#021F29] py-12 lg:py-16 scroll-mt-20"
             id="faq"
         >
             <div className="mx-auto flex w-full max-w-4xl flex-col px-6 lg:px-8">
