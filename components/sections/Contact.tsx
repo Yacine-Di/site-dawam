@@ -98,18 +98,6 @@ export default function Contact() {
                         </a>
                     </motion.div>
                 </div>
-
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, amount: 0.3 }}
-                    transition={{ duration: 0.6, delay: 0.4 }}
-                    className="mt-8 text-center"
-                >
-                    <p className="text-sm text-white/50">
-                        Adresse : à compléter
-                    </p>
-                </motion.div>
             </div>
         </section>
     );
